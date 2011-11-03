@@ -2,7 +2,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.hawkinssoftware</groupId>
 	<artifactId>hawkins-software-platform</artifactId>
 	<version>0.1.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -20,7 +19,7 @@
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
-				<!-- <version>0.13.0</version> -->
+				<version>0.13.0</version>
 				<configuration>
 					<resolver>p2</resolver>
 					<environments>
@@ -112,10 +111,14 @@
 	</repositories>
 
 	<parent>
-		<groupId>org.hawkinssoftware.rns</groupId>
-		<artifactId>rns</artifactId>
-		<version>0.1-alpha-1-2011.11.01-SNAPSHOT</version>
-		<relativePath>../../project/rns</relativePath>
+		<groupId>org.hawkinssoftware</groupId>
+		<artifactId>hawkins-software</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../../hawkins-software</relativePath>
 	</parent>
 
+	<modules>
+		<module>../../update-site/hawkins-software-update-site</module>
+		<module>../../../rns/project/rns</module>
+	</modules>
 </project>
