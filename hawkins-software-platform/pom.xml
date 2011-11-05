@@ -103,22 +103,16 @@
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/indigo</url>
 		</repository>
-		<repository>
-			<id>google-guava-osgi</id>
-			<layout>p2</layout>
-			<url>http://guava-osgi.googlecode.com/svn/trunk/repository/</url>
-		</repository>
 	</repositories>
 
 	<parent>
 		<groupId>org.hawkinssoftware</groupId>
 		<artifactId>hawkins-software</artifactId>
 		<version>1.0-SNAPSHOT</version>
-		<relativePath>../../hawkins-software</relativePath>
+		<relativePath>../../company/hawkins-software</relativePath>
 	</parent>
 
 	<modules>
 		<module>../../update-site/hawkins-software-update-site</module>
-		<module>../../../rns/project/rns</module>
 	</modules>
 </project>
